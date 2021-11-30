@@ -6,13 +6,24 @@ import {
 	Image,
 	Link,
 	useColorModeValue,
-	Button
+	Button,
+	List,
+	ListItem,
+	Icon,
+	SimpleGrid
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
+import {
+  IoLogoFacebook,
+  IoLogoGithub,
+} from 'react-icons/io5'
+import { GridItem } from '../components/grid-item'
+import thumbOkxeBlog from '../public/images/works/okxe-blog.png'
+import thumbLapaper from '../public/images/works/lapaper.png'
 
 const Page = () => {
 	return (
@@ -87,6 +98,42 @@ const Page = () => {
 						I ♥
 					</Heading>
 					<Paragraph>Game, Music, Photography, Leica</Paragraph>
+				</Section>
+				<Section delay={0.3}>
+					<Heading as="h3" variant="section-title">
+						On website
+					</Heading>
+					<List>
+						<ListItem>
+							<Link href="https://github.com/phamlap2808" target="_blank">
+								<Button
+									variant="ghost"
+									colorScheme="teal"
+									leftIcon={<Icon as={IoLogoGithub} />}
+								>
+									@phamlap2808
+								</Button>
+							</Link>
+						</ListItem>
+					</List>
+					<List>
+						<ListItem>
+							<Link href="https://www.facebook.com/gialap.pham.1/" target="_blank">
+								<Button
+									variant="ghost"
+									colorScheme="teal"
+									leftIcon={<Icon as={IoLogoFacebook} />}
+								>
+									Facebook
+								</Button>
+							</Link>
+						</ListItem>
+					</List>
+
+					<SimpleGrid columns={[1,2,2]} gap={6}>
+						<GridItem href="https://okxe.vn/blog" title="Okxe Blog" thumbnail={thumbOkxeBlog} />
+						<GridItem href="https://lapaper.vn" title="Lapaper" thumbnail={thumbLapaper} />
+					</SimpleGrid>
 				</Section>
 			</Container>
 		</Layout>
