@@ -71,9 +71,6 @@ const Navbar = props => {
 					<LinkItem href="/works" path={path}>
 						Works
 					</LinkItem>
-					<LinkItem href="/Post" path={path}>
-						Post
-					</LinkItem>
 				</Stack>
 				<Box flex={1} align="right">
 					<ThemeToggleButton />
@@ -91,9 +88,6 @@ const Navbar = props => {
 								</NextLink>
 								<NextLink href="/works" passHref>
 									<MenuItem as={Link}>Works</MenuItem>
-								</NextLink>
-								<NextLink href="/posts" passHref>
-									<MenuItem as={Link}>Posts</MenuItem>
 								</NextLink>
 							</MenuList>
 						</Menu>

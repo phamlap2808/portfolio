@@ -17,10 +17,7 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
-import {
-  IoLogoFacebook,
-  IoLogoGithub,
-} from 'react-icons/io5'
+import { IoLogoFacebook, IoLogoGithub, IoCall, IoMail } from 'react-icons/io5'
 import { GridItem } from '../components/grid-item'
 import thumbOkxeBlog from '../public/images/works/okxe-blog.png'
 import thumbLapaper from '../public/images/works/lapaper.png'
@@ -67,7 +64,14 @@ const Page = () => {
 					<Heading as="h3" variant="section-title">
 						Work
 					</Heading>
-					<Paragraph>Lập is a Frontend developer in OKXE.vn</Paragraph>
+					<Paragraph>
+						Lập is a freelance and frontend developer based in Ho Chi Minh city.
+						His current job in planning, developing project for company. He's
+						known as a detail-oriented and good communicator employee. He can
+						take multiple tasks at once. His supervisor aslo appreciates his
+						enthusiasm for the job.
+						He has knownledge of Vuejs, Nuxtjs, Reactjs, Nextjs ...
+					</Paragraph>
 					<Box align="center" my={4}>
 						<NextLink href="/works">
 							<Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -118,7 +122,10 @@ const Page = () => {
 					</List>
 					<List>
 						<ListItem>
-							<Link href="https://www.facebook.com/gialap.pham.1/" target="_blank">
+							<Link
+								href="https://www.facebook.com/gialap.pham.1/"
+								target="_blank"
+							>
 								<Button
 									variant="ghost"
 									colorScheme="teal"
@@ -129,10 +136,43 @@ const Page = () => {
 							</Link>
 						</ListItem>
 					</List>
-
-					<SimpleGrid columns={[1,2,2]} gap={6}>
-						<GridItem href="https://okxe.vn/blog" title="Okxe Blog" thumbnail={thumbOkxeBlog} />
-						<GridItem href="https://lapaper.vn" title="Lapaper" thumbnail={thumbLapaper} />
+					<List>
+						<ListItem>
+							<Link href="tel:+84834912919">
+								<Button
+									variant="ghost"
+									colorScheme="teal"
+									leftIcon={<Icon as={IoCall} />}
+								>
+									0834.912.919
+								</Button>
+							</Link>
+						</ListItem>
+					</List>
+					<List>
+						<ListItem>
+							<Link href="mailto:phamlap.rikan@gmail.com">
+								<Button
+									variant="ghost"
+									colorScheme="teal"
+									leftIcon={<Icon as={IoMail} />}
+								>
+									phamlap.rikan@gmail.com
+								</Button>
+							</Link>
+						</ListItem>
+					</List>
+					<SimpleGrid columns={[1, 2, 2]} gap={6}>
+						<GridItem
+							href="https://okxe.vn/blog"
+							title="Okxe Blog"
+							thumbnail={thumbOkxeBlog}
+						/>
+						<GridItem
+							href="https://lapaper.vn"
+							title="Lapaper"
+							thumbnail={thumbLapaper}
+						/>
 					</SimpleGrid>
 				</Section>
 			</Container>

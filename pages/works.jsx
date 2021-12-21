@@ -31,14 +31,14 @@ const Works = () => {
 						OKXE ngay hôm nay!
 					</WorkGridItem>
 				</Section>
-				<Section>
+				<Section delay={0.1}>
 					<WorkGridItem id="chuyenthanhly" title="Chuyên thanh lý" thumbnail={thumbChuyenThanhLy}>
 						Trang blog chính thức của OKXE. Tại đây, bạn có thể tìm được cho
 						mình các thông tin liên quan đến xe và khuyến mãi. Tham gia cùng
 						OKXE ngay hôm nay!
 					</WorkGridItem>
 				</Section>
-				<Section>
+				<Section delay={0.1}>
 					<WorkGridItem id="muamaytinhcu" title="Mua máy tính cũ" thumbnail={thumbMuaMayTinhCu}>
 						Trang blog chính thức của OKXE. Tại đây, bạn có thể tìm được cho
 						mình các thông tin liên quan đến xe và khuyến mãi. Tham gia cùng
