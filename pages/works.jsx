@@ -19,9 +19,7 @@ const Works = () => {
 						title="OKXE Blog"
 						thumbnail={thumbOkxeBlog}
 					>
-						Trang blog chính thức của OKXE. Tại đây, bạn có thể tìm được cho
-						mình các thông tin liên quan đến xe và khuyến mãi. Tham gia cùng
-						OKXE ngay hôm nay!
+						OKXE official blog page. Here, you can find for yourself vehicle-related information and promotions. Join OKXE today!
 					</WorkGridItem>
 				</Section>
 				<Section>
