@@ -19,28 +19,38 @@ const Works = () => {
 						title="OKXE Blog"
 						thumbnail={thumbOkxeBlog}
 					>
-						OKXE official blog page. Here, you can find for yourself vehicle-related information and promotions. Join OKXE today!
+						OKXE official blog page. Here, you can find for yourself
+						vehicle-related information and promotions. Join OKXE today!
 					</WorkGridItem>
 				</Section>
 				<Section>
 					<WorkGridItem id="lapaper" title="Lapaper" thumbnail={thumbLapaper}>
-						Trang blog chính thức của OKXE. Tại đây, bạn có thể tìm được cho
-						mình các thông tin liên quan đến xe và khuyến mãi. Tham gia cùng
-						OKXE ngay hôm nay!
+						Lapaper is a website which provides services about wedding card
+						printing and other types of cards. With Lapaper, customers can find
+						many beautiful cards, customers can also create their own designs
+						with the consultation of the professional designers.
 					</WorkGridItem>
 				</Section>
 				<Section delay={0.1}>
-					<WorkGridItem id="chuyenthanhly" title="Chuyên thanh lý" thumbnail={thumbChuyenThanhLy}>
-						Trang blog chính thức của OKXE. Tại đây, bạn có thể tìm được cho
-						mình các thông tin liên quan đến xe và khuyến mãi. Tham gia cùng
-						OKXE ngay hôm nay!
+					<WorkGridItem
+						id="chuyenthanhly"
+						title="Chuyên thanh lý"
+						thumbnail={thumbChuyenThanhLy}
+					>
+						chuyenthanhly.com is a website which is created for selling and
+						buying used or second-hand furniture. Customers can find used
+						furniture with good quality and a low price.
 					</WorkGridItem>
 				</Section>
 				<Section delay={0.1}>
-					<WorkGridItem id="muamaytinhcu" title="Mua máy tính cũ" thumbnail={thumbMuaMayTinhCu}>
-						Trang blog chính thức của OKXE. Tại đây, bạn có thể tìm được cho
-						mình các thông tin liên quan đến xe và khuyến mãi. Tham gia cùng
-						OKXE ngay hôm nay!
+					<WorkGridItem
+						id="muamaytinhcu"
+						title="Mua máy tính cũ"
+						thumbnail={thumbMuaMayTinhCu}
+					>
+						muamaytinhcu.net is a website which is created to sell and buy used
+						technology devices. The website also sells new model technology
+						devices.
 					</WorkGridItem>
 				</Section>
 			</SimpleGrid>
