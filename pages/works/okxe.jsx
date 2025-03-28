@@ -46,8 +46,8 @@ const Work = () => (
 				</ListItem>
 			</List>
 
-			<WorkImage src="/images/works/okxe_01.png" alt="OKXE Platform" />
-			<WorkImage src="/images/works/okxe_02.png" alt="OKXE Features" />
+			<WorkImage src="/images/works/okxe-01.png" alt="OKXE Platform" />
+			<WorkImage src="/images/works/okxe-02.png" alt="OKXE Features" />
 		</Container>
 	</Layout>
 )

@@ -47,8 +47,7 @@ const Work = () => (
                 </ListItem>
             </List>
 
-            <WorkImage src="/images/works/i18n-extension_01.png" alt="Extension Interface" />
-            <WorkImage src="/images/works/i18n-extension_02.png" alt="Google Sheets Integration" />
+            <WorkImage src="/images/works/i18n-sheets-sync-01.png" alt="Extension Interface" />
         </Container>
     </Layout>
 )

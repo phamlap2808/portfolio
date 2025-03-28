@@ -53,8 +53,8 @@ const Work = () => (
 				</ListItem>
 			</List>
 
-			<WorkImage src="/images/works/reorc_01.png" alt="Reorc Platform" />
-			<WorkImage src="/images/works/reorc_02.png" alt="Reorc Analytics" />
+			<WorkImage src="/images/works/reorc-01.png" alt="Reorc Platform" />
+			<WorkImage src="/images/works/reorc-02.png" alt="Reorc Analytics" />
 		</Container>
 	</Layout>
 )

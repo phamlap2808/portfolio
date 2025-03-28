@@ -45,8 +45,8 @@ const Work = () => (
 				</ListItem>
 			</List>
 
-			<WorkImage src="/images/works/remoteworkcloud_01.png" alt="Remote Work Cloud" />
-			<WorkImage src="/images/works/remoteworkcloud_02.png" alt="Remote Work Cloud Features" />
+			<WorkImage src="/images/works/rwc-01.png" alt="Remote Work Cloud" />
+			<WorkImage src="/images/works/rwc-02.png" alt="Remote Work Cloud Features" />
 		</Container>
 	</Layout>
 )

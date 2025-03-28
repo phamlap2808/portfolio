@@ -65,8 +65,7 @@ const Work = () => (
                 </ListItem>
             </List>
 
-            <WorkImage src="/images/works/nanahouse_01.png" alt="Customer Interface" />
-            <WorkImage src="/images/works/nanahouse_02.png" alt="Admin Dashboard" />
+            <WorkImage src="/images/works/nanahouse-01.png" alt="Customer Interface" />
         </Container>
     </Layout>
 )
