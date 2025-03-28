@@ -3,13 +3,15 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
 import { DogSpinner, DogContainer } from './voxel-dog-loader'
+import React from 'react'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
 
-const VoxelDog = () => {
+const VoxelDog = React.memo(() => {
   const refContainer = useRef()
+  const sceneRef = useRef()
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
   const [_camera, setCamera] = useState()
@@ -34,8 +36,10 @@ const VoxelDog = () => {
     }
   }, [renderer])
 
-  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
+    if (sceneRef.current) return
+    sceneRef.current = true
+
     const { current: container } = refContainer
     if (container && !renderer) {
       const scW = container.clientWidth
@@ -66,8 +70,16 @@ const VoxelDog = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
+      const ambientLight = new THREE.AmbientLight(0xffffff, 1.5)
       scene.add(ambientLight)
+
+      const dirLight1 = new THREE.DirectionalLight(0xffffff, 1)
+      dirLight1.position.set(10, 10, 10)
+      scene.add(dirLight1)
+
+      const dirLight2 = new THREE.DirectionalLight(0xffffff, 0.5)
+      dirLight2.position.set(-10, 5, -10)
+      scene.add(dirLight2)
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
@@ -109,7 +121,24 @@ const VoxelDog = () => {
       return () => {
         console.log('unmount')
         cancelAnimationFrame(req)
-        renderer.dispose()
+        if (sceneRef.current) {
+          scene.traverse((object) => {
+            if (object.geometry) {
+              object.geometry.dispose()
+            }
+            if (object.material) {
+              if (Array.isArray(object.material)) {
+                object.material.forEach(material => material.dispose())
+              } else {
+                object.material.dispose()
+              }
+            }
+          })
+          scene.clear()
+          renderer?.dispose()
+          _controls?.dispose()
+          sceneRef.current = false
+        }
       }
     }
   }, [])
@@ -124,6 +153,6 @@ const VoxelDog = () => {
   return (
     <DogContainer ref={refContainer}>{loading && <DogSpinner />}</DogContainer>
   )
-}
+})
 
 export default VoxelDog

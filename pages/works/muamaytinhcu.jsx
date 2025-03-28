@@ -5,7 +5,7 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-	<Layout title="okxe-blog">
+	<Layout title="Mua May Tinh Cu">
 		<Container>
 			<Title>
 				muamaytinhcu<Badge>2021</Badge>

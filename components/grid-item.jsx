@@ -6,34 +6,59 @@ import { Global } from '@emotion/react'
 export const GridItem = ({ children, href, title, thumbnail }) => (
 	<Box w="100%" align="center">
 		<LinkBox cursor="pointer">
-			<Image
-				src={thumbnail}
-				alt={title}
-				className="grid-item-thumbnail"
-				placeholder="blur"
-				loading="lazy"
-				height={130}
-				width={240}
-			/>
-			<LinkOverlay href={href} target="_blank">
-				<Text mt={2}>{title}</Text>
-			</LinkOverlay>
+			<Box 
+				position="relative" 
+				width="100%" 
+				paddingBottom="56.25%"
+				overflow="hidden"
+			>
+				<Image
+					src={thumbnail}
+					alt={title}
+					className="grid-item-thumbnail"
+					placeholder="blur"
+					loading="lazy"
+					fill
+					style={{
+						objectFit: 'cover',
+						position: 'absolute',
+						top: 0,
+						left: 0
+					}}
+				/>
+			</Box>
+			<NextLink href={href} target="_blank" passHref legacyBehavior>
+				<LinkOverlay>
+					<Text mt={2}>{title}</Text>
+				</LinkOverlay>
+			</NextLink>
 			<Text fontSize={14}>{children}</Text>
 		</LinkBox>
 	</Box>
 )
+
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
 	<Box w="100%" align="center">
-		<NextLink href={`/works/${id}`}>
+		<NextLink href={`/works/${id}`} legacyBehavior passHref>
 			<LinkBox cursor="pointer">
-				<Image
-					src={thumbnail}
-					alt={title}
-					height={130}
-					width={240}
-					className="grid-item-thumbnail"
-					placeholder="blur"
-				/>
+				<Box 
+					position="relative" 
+					width="100%" 
+					paddingBottom="56.25%"
+					overflow="hidden"
+				>
+					<Image
+						src={thumbnail}
+						alt={title}
+						fill
+						style={{
+							objectFit: 'cover',
+							objectPosition: 'center'
+						}}
+						className="grid-item-thumbnail"
+						placeholder="blur"
+					/>
+				</Box>
 				<LinkOverlay href={`/works/${id}`}>
 					<Text mt={2} fontSize={20}>
 						{title}

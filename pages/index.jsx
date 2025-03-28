@@ -17,10 +17,14 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
-import { IoLogoFacebook, IoLogoGithub, IoCall, IoMail } from 'react-icons/io5'
+import { IoLogoFacebook, IoLogoGithub, IoCall, IoMail, IoLogoLinkedin } from 'react-icons/io5'
 import { GridItem } from '../components/grid-item'
 import thumbOkxeBlog from '../public/images/works/okxe-blog.png'
 import thumbLapaper from '../public/images/works/lapaper.png'
+import thumbI18nExtension from '../public/images/works/i18n-sheets-sync-01.png'
+import thumbCodeReview from '../public/images/works/ai-code-review-01.png'
+import thumbI18nTool from '../public/images/works/i18n-google-sheet-tool-01.png'
+import thumbNanahouse from '../public/images/works/nanahouse-01.png'
 
 const Page = () => {
 	return (
@@ -65,12 +69,11 @@ const Page = () => {
 						Work
 					</Heading>
 					<Paragraph>
-						Lập is a freelance and frontend developer based in Ho Chi Minh city.
-						His current job in planning, developing project for company. He's
-						known as a detail-oriented and good communicator employee. He can
-						take multiple tasks at once. His supervisor aslo appreciates his
-						enthusiasm for the job.
-						He has knownledge of Vuejs, Nuxtjs, Reactjs, Nextjs ...
+						Lập is a front-end developer with over 5 years of experience, currently working at Recurve.
+						He&apos;s known for strong problem-solving skills, excellent communication, and ability to learn new technologies quickly.
+						He has expertise in VueJS, Nuxt, ReactJS, Next, React Native, ExpressJS, and AWS cloud services.
+						His technical stack includes JavaScript, TypeScript, and various modern frameworks for building responsive, 
+						high-performance web applications.
 					</Paragraph>
 					<Box align="center" my={4}>
 						<NextLink href="/works">
@@ -86,15 +89,23 @@ const Page = () => {
 					</Heading>
 					<BioSection>
 						<BioYear>1997</BioYear>
-						Born in Mỹ Tho city, Tiền Giang provice, Vietnam
+						Born in Mỹ Tho city, Tiền Giang province, Vietnam
 					</BioSection>
 					<BioSection>
-						<BioYear>2019</BioYear>
-						Worked at HCMC University of Education
+						<BioYear>2015-2019</BioYear>
+						Graduated from Saigon Technology University
 					</BioSection>
 					<BioSection>
-						<BioYear>2020 to present</BioYear>
-						Worked at OKXE VIETNAM Company Limited
+						<BioYear>2019-2022</BioYear>
+						Worked at OKXE VIETNAM as Developer
+					</BioSection>
+					<BioSection>
+						<BioYear>2022-2024</BioYear>
+						Worked at GMO Z.Com Runsystem as Front-End Developer
+					</BioSection>
+					<BioSection>
+						<BioYear>2024 to present</BioYear>
+						Working at Recurve as Front-End Developer
 					</BioSection>
 				</Section>
 				<Section delay={0.3}>
@@ -114,6 +125,7 @@ const Page = () => {
 									variant="ghost"
 									colorScheme="teal"
 									leftIcon={<Icon as={IoLogoGithub} />}
+									px={0}
 								>
 									@phamlap2808
 								</Button>
@@ -130,8 +142,26 @@ const Page = () => {
 									variant="ghost"
 									colorScheme="teal"
 									leftIcon={<Icon as={IoLogoFacebook} />}
+									px={0}
 								>
 									Facebook
+								</Button>
+							</Link>
+						</ListItem>
+					</List>
+					<List>
+						<ListItem>
+							<Link
+								href="https://www.linkedin.com/in/l%E1%BA%ADp-ph%E1%BA%A1m-a72b18207/"
+								target="_blank"
+							>
+								<Button
+									variant="ghost"
+									colorScheme="teal"
+									leftIcon={<Icon as={IoLogoLinkedin} />}
+									px={0}
+								>
+									Linkedin
 								</Button>
 							</Link>
 						</ListItem>
@@ -143,6 +173,7 @@ const Page = () => {
 									variant="ghost"
 									colorScheme="teal"
 									leftIcon={<Icon as={IoCall} />}
+									px={0}
 								>
 									0834.912.919
 								</Button>
@@ -156,6 +187,7 @@ const Page = () => {
 									variant="ghost"
 									colorScheme="teal"
 									leftIcon={<Icon as={IoMail} />}
+									px={0}
 								>
 									phamlap.rikan@gmail.com
 								</Button>
@@ -173,6 +205,30 @@ const Page = () => {
 							title="Lapaper"
 							thumbnail={thumbLapaper}
 						/>
+						<GridItem
+							href="https://github.com/phamlap2808/i18n-google-sheet-vscode-extention"
+							title="i18n Google Sheet Extension"
+							thumbnail={thumbI18nExtension}
+						>
+						</GridItem>
+						<GridItem
+							href="https://github.com/phamlap2808/review-code"
+							title="AI Code Review Tool"
+							thumbnail={thumbCodeReview}
+						>
+						</GridItem>
+						<GridItem
+							href="https://github.com/phamlap2808/i18n-google-sheet-tool"
+							title="i18n Google Sheet CLI"
+							thumbnail={thumbI18nTool}
+						>
+						</GridItem>
+						<GridItem
+							href="https://nanahouse-client.vercel.app"
+							title="Nanahouse E-commerce"
+							thumbnail={thumbNanahouse}
+						>
+						</GridItem>
 					</SimpleGrid>
 				</Section>
 			</Container>

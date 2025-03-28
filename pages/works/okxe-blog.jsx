@@ -5,14 +5,19 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-	<Layout title="okxe-blog">
+	<Layout title="OKXE Blog">
 		<Container>
 			<Title>
 				OKXE Blog <Badge>2020-2021</Badge>
 			</Title>
 			<P>
-				OKXE official blog page. Here, you can find for yourself vehicle-related
-				information and promotions. Join OKXE today!
+				OKXE Blog is the official content platform of OKXE - Vietnam&apos;s leading motorcycle marketplace. 
+				The blog provides comprehensive information about motorcycles, including new vehicle updates, 
+				market trends, pricing guides for both new and used vehicles, buying advice, technical knowledge, 
+				and maintenance tips. It features specialized sections for motorcycle reviews, comparisons, 
+				road safety, travel guides, and promotional campaigns. The platform also includes dedicated 
+				sections for electric vehicles and OKXE GO service updates, making it a one-stop resource 
+				for motorcycle enthusiasts and potential buyers.
 			</P>
 			<List ml={4} my={4}>
 				<ListItem>
@@ -28,6 +33,18 @@ const Work = () => (
 				<ListItem>
 					<Meta>Stack</Meta>
 					<span>Nuxtjs</span>
+				</ListItem>
+				<ListItem>
+					<Meta>Features</Meta>
+					<span>Responsive Design, SEO Optimization, Content Management System</span>
+				</ListItem>
+				<ListItem>
+					<Meta>Role</Meta>
+					<span>Frontend Developer</span>
+				</ListItem>
+				<ListItem>
+					<Meta>Responsibilities</Meta>
+					<span>UI/UX Development, Performance Optimization, Feature Implementation</span>
 				</ListItem>
 			</List>
 

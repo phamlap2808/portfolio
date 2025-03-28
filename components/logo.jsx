@@ -22,19 +22,17 @@ const Logo = () => {
 
 	return (
 		<Link href="/">
-			<a>
-				<LogoBox>
-					<Image src={footPrintImg} height={20} width={20} alt="logo" />
-					<Text
-						color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-						fontFamily="M PLUS Rounded 1c"
-						fontWeight="bold"
-						ml={3}
-					>
-						Phạm Gia Lập
-					</Text>
-				</LogoBox>
-			</a>
+			<LogoBox>
+				<Image src={footPrintImg} height={20} width={20} alt="logo" />
+				<Text
+					color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+					fontFamily="M PLUS Rounded 1c"
+					fontWeight="bold"
+					ml={3}
+				>
+					Phạm Gia Lập
+				</Text>
+			</LogoBox>
 		</Link>
 	)
 }

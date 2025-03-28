@@ -8,25 +8,26 @@ const variants = {
 	exit: { opacity: 0, x: 0, y: 20 }
 }
 
-const Layout = ({ children, title }) => (
-	<motion.article
-		initial="hidden"
-		animate="enter"
-		exit="exit"
-		variants={variants}
-		transition={{ duration: 0.4, type: 'easeInOut' }}
-		style={{ position: 'relative' }}
-	>
-		<>
-			{title && (
+const Layout = ({ children, title }) => {
+	const titleText = title ? `${title} - Phạm Gia Lập` : 'Phạm Gia Lập'
+	return (
+		<motion.article
+			initial="hidden"
+			animate="enter"
+			exit="exit"
+			variants={variants}
+			transition={{ duration: 0.4, type: 'easeInOut' }}
+			style={{ position: 'relative' }}
+		>
+			<>
 				<Head>
-					<title>{title} - Phạm Gia Lập</title>
+					<title>{titleText}</title>
 				</Head>
-			)}
-			{children}
-			<GridItemStyle />
-		</>
-	</motion.article>
-)
+				{children}
+				<GridItemStyle />
+			</>
+		</motion.article>
+	)
+}
 
 export default Layout
