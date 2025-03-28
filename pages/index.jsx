@@ -89,7 +89,7 @@ const Page = () => {
 					</Heading>
 					<BioSection>
 						<BioYear>1997</BioYear>
-						Born in Mỹ Tho city, Tiền Giang province, Vietnam
+						Born in My Tho City, Tien Giang Province, Vietnam
 					</BioSection>
 					<BioSection>
 						<BioYear>2015-2019</BioYear>
