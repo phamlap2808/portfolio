@@ -17,7 +17,7 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
-import { IoLogoFacebook, IoLogoGithub, IoCall, IoMail, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoGithub, IoCall, IoMail, IoLogoLinkedin } from 'react-icons/io5'
 import { GridItem } from '../components/grid-item'
 import thumbOkxeBlog from '../public/images/works/okxe-blog.png'
 import thumbLapaper from '../public/images/works/lapaper.png'
@@ -128,23 +128,6 @@ const Page = () => {
 									px={0}
 								>
 									@phamlap2808
-								</Button>
-							</Link>
-						</ListItem>
-					</List>
-					<List>
-						<ListItem>
-							<Link
-								href="https://www.facebook.com/gialap.pham.1/"
-								target="_blank"
-							>
-								<Button
-									variant="ghost"
-									colorScheme="teal"
-									leftIcon={<Icon as={IoLogoFacebook} />}
-									px={0}
-								>
-									Facebook
 								</Button>
 							</Link>
 						</ListItem>
