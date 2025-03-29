@@ -20,12 +20,11 @@ import { BioSection, BioYear } from '../components/bio'
 import { IoLogoGithub, IoCall, IoMail, IoLogoLinkedin } from 'react-icons/io5'
 import { GridItem } from '../components/grid-item'
 import thumbOkxeBlog from '../public/images/works/okxe-blog.png'
-import thumbLapaper from '../public/images/works/lapaper.png'
 import thumbI18nExtension from '../public/images/works/i18n-sheets-sync-01.png'
 import thumbCodeReview from '../public/images/works/ai-code-review-01.png'
 import thumbI18nTool from '../public/images/works/i18n-google-sheet-tool-01.png'
 import thumbNanahouse from '../public/images/works/nanahouse-01.png'
-
+import thumbRemoteworkcloud from '../public/images/works/rwc-01.png'
 const Page = () => {
 	return (
 		<Layout>
@@ -184,9 +183,9 @@ const Page = () => {
 							thumbnail={thumbOkxeBlog}
 						/>
 						<GridItem
-							href="https://lapaper.vn"
-							title="Lapaper"
-							thumbnail={thumbLapaper}
+							href="https://remotework-cloud.com"
+							title="Remote Work Cloud"
+							thumbnail={thumbRemoteworkcloud}
 						/>
 						<GridItem
 							href="https://github.com/phamlap2808/i18n-google-sheet-vscode-extention"
