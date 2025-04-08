@@ -21,6 +21,7 @@
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@types/three": "^0.174.0",
+    "@vercel/speed-insights": "^1.2.0",
     "framer-motion": "^11.0.3",
     "next": "^15.0.0",
     "react": "^18.2.0",
